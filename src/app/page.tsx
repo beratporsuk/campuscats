@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { QrCode, BookOpen, Phone, Heart, Shield, MessageCircle } from 'lucide-react';
+import { ClipboardList, BookOpen, Phone, Heart, Shield, MessageCircle } from 'lucide-react';
 
 const WHATSAPP_LINK = 'https://chat.whatsapp.com/I9AYlxEAKtIERwgqUYHAPR?mode=gi_t';
 
@@ -54,18 +54,18 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/rehber"
+              href="/takip"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200"
             >
-              <BookOpen className="w-5 h-5" />
-              Beslenme Rehberi
+              <ClipboardList className="w-5 h-5" />
+              Besleme Kaydı Bırak
             </Link>
             <Link
-              href="/acil"
+              href="/rehber"
               className="inline-flex items-center gap-2 bg-white text-gray-800 font-semibold px-8 py-4 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 border border-gray-200"
             >
-              <Phone className="w-5 h-5 text-red-500" />
-              Acil Durum
+              <BookOpen className="w-5 h-5 text-orange-500" />
+              Beslenme Rehberi
             </Link>
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-3 gap-6 text-white text-center">
             {[
-              { value: 'QR', label: 'Akıllı Takip Sistemi', icon: QrCode },
+              { value: '📋', label: 'Google Form Takibi', icon: ClipboardList },
               { value: '♥', label: 'Sorumlu Besleme', icon: Heart },
               { value: '100%', label: 'Ücretsiz & Açık', icon: Shield },
             ].map((stat) => (
@@ -109,40 +109,48 @@ export default function Home() {
             {[
               {
                 step: '01',
-                icon: QrCode,
-                title: 'QR Kodu Tara',
-                desc: 'Besleme noktasındaki QR kodu telefon kameranla tara. Kurulum veya uygulama gerektirmez.',
-                color: 'bg-orange-50 text-orange-600 border-orange-200',
+                emoji: '🐱',
+                title: 'Hayvanları Besle',
+                desc: 'Mama veya su doldurun. Her besleme noktasında bir kap bulunmaktadır.',
+                color: 'bg-orange-50 border-orange-200',
               },
               {
                 step: '02',
-                icon: Heart,
-                title: 'Durumu Kontrol Et',
-                desc: 'Hayvanların bugün beslenip beslenmediğini anında gör. Aşırı beslenmeyi önle.',
-                color: 'bg-amber-50 text-amber-600 border-amber-200',
+                emoji: '📱',
+                title: 'Formu Aç',
+                desc: 'QR kodu tarayın veya "Besleme Kaydı Bırak" butonuna basın. Uygulama gerekmez.',
+                color: 'bg-amber-50 border-amber-200',
               },
               {
                 step: '03',
-                icon: Shield,
+                emoji: '✅',
                 title: 'Kaydını Bırak',
-                desc: '"Ben Besledim" butonuna bas ve beslenme kaydını sisteme ekle. Hepsi bu kadar!',
-                color: 'bg-green-50 text-green-600 border-green-200',
+                desc: 'Hangi noktada ne doldurduğunu seç, gönder. Otomatik olarak kaydedilir.',
+                color: 'bg-green-50 border-green-200',
               },
             ].map((item) => (
               <div
                 key={item.step}
-                className="relative bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+                className={`relative bg-white rounded-3xl p-8 border shadow-sm hover:shadow-md transition-shadow ${item.color}`}
               >
                 <div className="absolute -top-3 -left-3 w-8 h-8 bg-gray-900 text-white text-xs font-bold rounded-full flex items-center justify-center">
                   {item.step}
                 </div>
-                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-5 border ${item.color}`}>
-                  <item.icon className="w-7 h-7" />
-                </div>
+                <div className="text-5xl mb-5">{item.emoji}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
                 <p className="text-gray-500 leading-relaxed">{item.desc}</p>
               </div>
             ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link
+              href="/takip"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200"
+            >
+              <ClipboardList className="w-5 h-5" />
+              Besleme Kaydı Bırak
+            </Link>
           </div>
         </div>
       </section>
