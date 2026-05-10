@@ -7,9 +7,9 @@ import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 
 const links = [
-  { href: '/takip', label: 'Besleme Takibi' },
-  { href: '/rehber', label: 'Beslenme Rehberi' },
-  { href: '/acil', label: 'Acil Durum' },
+  { href: '/takip', label: 'Feeding Tracker' },
+  { href: '/rehber', label: 'Feeding Guide' },
+  { href: '/acil', label: 'Emergency' },
 ];
 
 export default function Navbar() {

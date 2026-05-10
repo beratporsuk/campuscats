@@ -4,10 +4,10 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'PatiDurak — Kampüs Hayvanları Akıllı Destek Sistemi',
+  title: 'PatiDurak — Smart Support System for Campus Animals',
   description:
-    'TEDU kampüsündeki sokak hayvanları için QR tabanlı beslenme takip sistemi. Sorumlu besleme alışkanlıkları için Pati-Durak.',
-  keywords: 'kampüs hayvanları, sokak kedisi, TEDU, beslenme takip, QR sistem',
+    'A QR-based feeding tracking system for stray animals on the TEDU campus. Promoting responsible feeding habits with PatiDurak.',
+  keywords: 'campus cats, stray animals, TEDU, feeding tracker, QR system',
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className="h-full antialiased">
+    <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col bg-white" style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
         <Navbar />
         <main className="flex-1 pt-16">{children}</main>

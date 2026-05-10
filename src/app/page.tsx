@@ -18,7 +18,7 @@ export default function Home() {
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center py-20">
           <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 text-sm font-medium px-4 py-2 rounded-full mb-8 border border-orange-200">
             <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
-            TEDU Animal Friends iş birliği ile
+            In collaboration with TEDU Animal Friends
           </div>
 
           <div className="flex justify-center mb-8">
@@ -45,11 +45,11 @@ export default function Home() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-600 mb-4 max-w-2xl mx-auto font-medium">
-            Kampüs sokak hayvanları için akıllı farkındalık ve destek sistemi
+            A smart awareness and support system for campus stray animals
           </p>
           <p className="text-base text-gray-500 mb-10 max-w-xl mx-auto leading-relaxed">
-            Sorumlu besleme alışkanlıkları oluşturun, aşırı beslenmeyi önleyin
-            ve kampüs hayvanlarının sağlığını birlikte koruyun.
+            Build responsible feeding habits, prevent overfeeding,
+            and protect the health of campus animals — together.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -58,20 +58,20 @@ export default function Home() {
               className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200"
             >
               <ClipboardList className="w-5 h-5" />
-              Besleme Kaydı Bırak
+              Log a Feeding
             </Link>
             <Link
               href="/rehber"
               className="inline-flex items-center gap-2 bg-white text-gray-800 font-semibold px-8 py-4 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200 border border-gray-200"
             >
               <BookOpen className="w-5 h-5 text-orange-500" />
-              Beslenme Rehberi
+              Feeding Guide
             </Link>
           </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400">
-          <span className="text-xs">Aşağı kaydır</span>
+          <span className="text-xs">Scroll down</span>
           <div className="w-5 h-8 border-2 border-gray-300 rounded-full flex justify-center pt-1.5">
             <div className="w-1 h-2 bg-gray-400 rounded-full animate-bounce" />
           </div>
@@ -83,9 +83,9 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-3 gap-6 text-white text-center">
             {[
-              { value: '📋', label: 'Google Form Takibi', icon: ClipboardList },
-              { value: '♥', label: 'Sorumlu Besleme', icon: Heart },
-              { value: '100%', label: 'Ücretsiz & Açık', icon: Shield },
+              { value: '📋', label: 'Google Form Tracking', icon: ClipboardList },
+              { value: '♥', label: 'Responsible Feeding', icon: Heart },
+              { value: '100%', label: 'Free & Open', icon: Shield },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col items-center gap-1">
                 <stat.icon className="w-6 h-6 opacity-80 mb-1" />
@@ -101,8 +101,8 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
-            <span className="text-orange-500 font-semibold text-sm uppercase tracking-wider">Nasıl Çalışır?</span>
-            <h2 className="text-4xl font-bold text-gray-900 mt-2">3 Basit Adım</h2>
+            <span className="text-orange-500 font-semibold text-sm uppercase tracking-wider">How It Works</span>
+            <h2 className="text-4xl font-bold text-gray-900 mt-2">3 Simple Steps</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -110,22 +110,22 @@ export default function Home() {
               {
                 step: '01',
                 emoji: '🐱',
-                title: 'Hayvanları Besle',
-                desc: 'Mama veya su doldurun. Her besleme noktasında bir kap bulunmaktadır.',
+                title: 'Feed the Animals',
+                desc: 'Refill the food or water bowl at any feeding station around campus.',
                 color: 'bg-orange-50 border-orange-200',
               },
               {
                 step: '02',
                 emoji: '📱',
-                title: 'Formu Aç',
-                desc: 'QR kodu tarayın veya "Besleme Kaydı Bırak" butonuna basın. Uygulama gerekmez.',
+                title: 'Open the Form',
+                desc: 'Scan the QR code or tap "Log a Feeding". No app download required.',
                 color: 'bg-amber-50 border-amber-200',
               },
               {
                 step: '03',
                 emoji: '✅',
-                title: 'Kaydını Bırak',
-                desc: 'Hangi noktada ne doldurduğunu seç, gönder. Otomatik olarak kaydedilir.',
+                title: 'Submit Your Log',
+                desc: 'Select your location and what you refilled. It gets saved automatically.',
                 color: 'bg-green-50 border-green-200',
               },
             ].map((item) => (
@@ -149,7 +149,7 @@ export default function Home() {
               className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200"
             >
               <ClipboardList className="w-5 h-5" />
-              Besleme Kaydı Bırak
+              Log a Feeding
             </Link>
           </div>
         </div>
@@ -160,10 +160,10 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="bg-[#25D366] rounded-3xl p-10 text-white text-center shadow-xl">
             <MessageCircle className="w-12 h-12 mx-auto mb-4 opacity-90 fill-white" />
-            <h2 className="text-3xl font-bold mb-3">Topluluğa Katıl</h2>
+            <h2 className="text-3xl font-bold mb-3">Join the Community</h2>
             <p className="text-green-100 mb-6 max-w-lg mx-auto">
-              TEDU Animal Friends WhatsApp grubuna katılın. Acil durumlar, beslenme tavsiyeleri
-              ve kampüs hayvanlarına destek için tek adres.
+              Join the TEDU Animal Friends WhatsApp group — the go-to place for emergencies,
+              feeding advice, and supporting campus animals.
             </p>
             <a
               href={WHATSAPP_LINK}
@@ -172,7 +172,7 @@ export default function Home() {
               className="inline-flex items-center gap-2 bg-white text-[#25D366] font-bold px-8 py-3.5 rounded-xl hover:scale-105 transition-transform shadow-md"
             >
               <MessageCircle className="w-5 h-5 fill-[#25D366]" />
-              WhatsApp Grubuna Katıl
+              Join WhatsApp Group
             </a>
           </div>
         </div>
@@ -183,16 +183,16 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="bg-gradient-to-r from-red-500 to-rose-500 rounded-3xl p-10 text-white text-center shadow-xl">
             <Phone className="w-12 h-12 mx-auto mb-4 opacity-90" />
-            <h2 className="text-3xl font-bold mb-3">Acil Durum mu?</h2>
+            <h2 className="text-3xl font-bold mb-3">Emergency?</h2>
             <p className="text-red-100 mb-6 max-w-lg mx-auto">
-              Yaralı veya hasta bir hayvan gördüğünüzde ne yapmanız gerektiğini öğrenin.
+              Found an injured or sick animal? Learn what to do and who to contact immediately.
             </p>
             <Link
               href="/acil"
               className="inline-flex items-center gap-2 bg-white text-red-600 font-bold px-8 py-3.5 rounded-xl hover:scale-105 transition-transform shadow-md"
             >
               <Phone className="w-4 h-4" />
-              Acil Rehberi Görüntüle
+              View Emergency Guide
             </Link>
           </div>
         </div>

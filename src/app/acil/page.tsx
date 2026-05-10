@@ -5,43 +5,43 @@ const WHATSAPP_LINK = 'https://chat.whatsapp.com/I9AYlxEAKtIERwgqUYHAPR?mode=gi_
 const groupRules = [
   {
     num: '1',
-    title: 'Hayvanları Kesinlikle Satmıyoruz',
-    desc: 'Eğer birisi gruba sahiplendirmek için yazarsa ve para talep ederse lütfen Animal Friends ile iletişime geçin. Bu, Türkiye\'de yasal olmayan bir eylemdir.',
+    title: 'We Never Sell Animals',
+    desc: 'If someone in the group asks for money in exchange for adoption, please contact Animal Friends immediately. This is illegal in Turkey.',
     icon: '🚫',
     color: 'border-red-200 bg-red-50',
   },
   {
     num: '2',
-    title: 'Yardım için Ana Gruba Yazın',
-    desc: 'Yardıma ihtiyacı olan bir hayvanı bildirmek veya veteriner/mama konusunda fikir almak için bu ana gruba yazmanızı rica ediyoruz. Ana grupta daha fazla üye olduğu için yardım almanız daha hızlı ve kolay olacaktır.',
+    title: 'Write to the Main Group for Help',
+    desc: 'To report an animal in need or ask for advice on food/vet care, please write in this main group. We have more members here so you\'ll get help faster.',
     icon: '💬',
     color: 'border-orange-200 bg-orange-50',
   },
   {
     num: '3',
-    title: 'Şikayet ve Öneriler',
-    desc: 'Eğer bir şikayet/öneri veya bize bildirmek istediğiniz herhangi bir konu olursa bize WhatsApp üzerinden ulaşabilirsiniz.',
+    title: 'Complaints & Suggestions',
+    desc: 'If you have a complaint, suggestion, or anything you\'d like to share with us, you can reach us via WhatsApp.',
     icon: '📢',
     color: 'border-blue-200 bg-blue-50',
   },
   {
     num: '4',
-    title: 'Hepimiz Yardımcı Olabiliriz',
-    desc: 'Hepimizin öğrenci olduğunu ve okulumuzun hayvanları ile ilgilenmekte herkesin yardımcı olabileceğini unutmayın. Bazen yetişemediğimiz yerler oluyor, bu durumda bizimle iletişime geçerek yardımcı olabilirsiniz.',
+    title: 'Everyone Can Help',
+    desc: 'Remember that we\'re all students and anyone can help care for campus animals. Sometimes we can\'t reach every spot — contact us and we\'ll guide you.',
     icon: '🤝',
     color: 'border-green-200 bg-green-50',
   },
   {
     num: '5',
-    title: 'Evcil Hayvanınızı Okula Bırakmayın',
-    desc: 'Okula bırakmak için lütfen hayvanlarınızı getirmeyin! Bu canlar ev yaşamına alıştığı için okulda dejenerasyona giriyor ve buradaki kedilerimiz maalesef onlarla kavga ederek zarar verebiliyor. Okul güvenli diye düşünerek bırakmayın — kediler kolayca kampüse girip çıkabilirler.',
+    title: 'Do Not Bring Your Pet to Campus',
+    desc: 'Please don\'t bring your pets to leave on campus. House cats aren\'t used to outdoor life and may fight with campus cats, causing harm. Campus is an open area — cats can easily wander into danger.',
     icon: '🏠',
     color: 'border-amber-200 bg-amber-50',
   },
   {
     num: '6',
-    title: 'Veterinere Götürmeden Önce Haber Verin',
-    desc: 'Bizim ile iletişime geçmeden kedileri kampüsten çıkarmayın veya veterinere götürmeyin! Daha önce bir canımızı hasta olduğu için habersizce veterinere götürdükleri için ilaçları aksamıştı ve kedimizin iyileşme süreci uzamıştı. Önce bizimle iletişime geçip bilgi almayı/vermeyi unutmayın.',
+    title: 'Contact Us Before Taking an Animal to the Vet',
+    desc: 'Do not remove a cat from campus or take it to a vet without contacting us first. A previous incident caused a cat\'s medication to be disrupted because we weren\'t informed. Always check with us first so we can coordinate care.',
     icon: '🏥',
     color: 'border-violet-200 bg-violet-50',
   },
@@ -50,32 +50,32 @@ const groupRules = [
 const steps = [
   {
     step: 1,
-    title: 'Sakin Olun, Yaklaşmayın',
-    desc: 'Yaralı veya hasta bir hayvan stres altında saldırgan olabilir. Güvenli bir mesafeden durumu değerlendirin.',
+    title: 'Stay Calm — Don\'t Approach',
+    desc: 'An injured or sick animal may act aggressively under stress. Assess the situation from a safe distance.',
     icon: Shield,
     color: 'bg-blue-50 border-blue-200',
     iconColor: 'text-blue-600',
   },
   {
     step: 2,
-    title: 'Animal Friends Grubuna Yazın',
-    desc: 'Önce WhatsApp grubuna yazın. Konumu, hayvanın durumunu ve saati belirtin. Fotoğraf ekleyebilirsiniz.',
+    title: 'Write to the Animal Friends Group',
+    desc: 'Message the WhatsApp group first. Include the location, the animal\'s condition, and the time. Photos help.',
     icon: MessageCircle,
     color: 'bg-green-50 border-green-200',
     iconColor: 'text-green-600',
   },
   {
     step: 3,
-    title: 'Konumu Kaydedin',
-    desc: 'Hayvanın tam konumunu belirleyin. Kampüs içinde ise bina veya alan adını net olarak belirtin.',
+    title: 'Note the Location',
+    desc: 'Identify the exact location clearly — building name, area, or nearby landmark on campus.',
     icon: MapPin,
     color: 'bg-orange-50 border-orange-200',
     iconColor: 'text-orange-600',
   },
   {
     step: 4,
-    title: 'Kendi Başınıza Taşımayın',
-    desc: 'Animal Friends onayı olmadan hayvanı kampüsten çıkarmayın veya veterinere götürmeyin. İlaç uyumsuzluğu gibi ciddi sorunlara yol açabilir.',
+    title: 'Do Not Move the Animal',
+    desc: 'Do not remove the animal from campus or take it to a vet without Animal Friends\' approval. Medication inconsistency can seriously delay recovery.',
     icon: AlertTriangle,
     color: 'bg-red-50 border-red-200',
     iconColor: 'text-red-600',
@@ -83,14 +83,14 @@ const steps = [
 ];
 
 const symptoms = [
-  { sign: 'Yürüyemiyor veya topallıyor', urgent: true },
-  { sign: 'Açık yara veya kanama var', urgent: true },
-  { sign: 'Bilinç kaybı var, hareketsiz', urgent: true },
-  { sign: 'Nefes almakta güçlük çekiyor', urgent: true },
-  { sign: 'Aşırı kusma veya ishal', urgent: false },
-  { sign: 'Normalden fazla uyuklama', urgent: false },
-  { sign: 'Yemek yemiyor, içmiyor', urgent: false },
-  { sign: 'Gözünde akıntı veya şişlik', urgent: false },
+  { sign: 'Cannot walk or is limping', urgent: true },
+  { sign: 'Visible wound or bleeding', urgent: true },
+  { sign: 'Unconscious or unresponsive', urgent: true },
+  { sign: 'Difficulty breathing', urgent: true },
+  { sign: 'Excessive vomiting or diarrhea', urgent: false },
+  { sign: 'Sleeping more than usual', urgent: false },
+  { sign: 'Not eating or drinking', urgent: false },
+  { sign: 'Discharge or swelling around the eye', urgent: false },
 ];
 
 export default function AcilPage() {
@@ -102,10 +102,11 @@ export default function AcilPage() {
           <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
             <AlertTriangle className="w-8 h-8" />
           </div>
-          <h1 className="text-4xl sm:text-5xl font-black mb-4">Acil Durum Rehberi</h1>
+          <h1 className="text-4xl sm:text-5xl font-black mb-4">Emergency Guide</h1>
           <p className="text-red-100 max-w-xl mx-auto text-lg">
-            Kampüste hasta veya yaralı bir hayvan gördüğünüzde yapmanız gereken
-            <span className="font-bold text-white"> tek şey</span>: Animal Friends grubuna yazın.
+            Found a sick or injured animal on campus? The
+            <span className="font-bold text-white"> one thing</span> you should do:
+            write to the Animal Friends group.
           </p>
         </div>
       </div>
@@ -119,11 +120,11 @@ export default function AcilPage() {
               🐾
             </div>
             <div className="flex-1 text-center sm:text-left">
-              <p className="text-green-100 text-sm font-medium mb-1">Birinci öncelik</p>
-              <h2 className="text-2xl font-black mb-2">TEDU Animal Friends WhatsApp Grubuna Katıl</h2>
+              <p className="text-green-100 text-sm font-medium mb-1">First priority</p>
+              <h2 className="text-2xl font-black mb-2">Join the TEDU Animal Friends WhatsApp Group</h2>
               <p className="text-green-100 text-sm leading-relaxed">
-                Acil bir durumda, veterinere götürmeden veya herhangi bir adım atmadan önce
-                lütfen gruba yazın. Topluluk sizi yönlendirecektir.
+                In an emergency, before taking any action — before going to a vet —
+                please write to the group. The team will guide you.
               </p>
             </div>
             <a
@@ -133,7 +134,7 @@ export default function AcilPage() {
               className="flex-shrink-0 flex items-center gap-3 bg-white text-[#25D366] font-bold text-lg px-7 py-4 rounded-2xl hover:scale-105 transition-transform shadow-lg whitespace-nowrap"
             >
               <MessageCircle className="w-6 h-6 fill-[#25D366]" />
-              Gruba Katıl
+              Join Group
             </a>
           </div>
         </div>
@@ -142,7 +143,7 @@ export default function AcilPage() {
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
             <Heart className="w-6 h-6 text-orange-500" />
-            Acil Durumda Ne Yapmalısınız?
+            What Should You Do?
           </h2>
           <div className="space-y-4">
             {steps.map((s) => (
@@ -151,7 +152,7 @@ export default function AcilPage() {
                   <s.icon className={`w-5 h-5 ${s.iconColor}`} />
                 </div>
                 <div>
-                  <span className="text-xs font-bold text-gray-400 uppercase">Adım {s.step}</span>
+                  <span className="text-xs font-bold text-gray-400 uppercase">Step {s.step}</span>
                   <h3 className="font-bold text-gray-900 mt-0.5 mb-1">{s.title}</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">{s.desc}</p>
                 </div>
@@ -167,8 +168,8 @@ export default function AcilPage() {
               <Info className="w-6 h-6 text-green-600" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-gray-900">Grup Kuralları</h2>
-              <p className="text-sm text-gray-500">Animal Friends tarafından belirlenen önemli kurallar</p>
+              <h2 className="text-2xl font-bold text-gray-900">Group Rules</h2>
+              <p className="text-sm text-gray-500">Important rules set by Animal Friends</p>
             </div>
           </div>
 
@@ -188,7 +189,7 @@ export default function AcilPage() {
           </div>
 
           <p className="text-center text-gray-400 text-sm mt-4 italic">
-            Hepinize çok teşekkür ederiz 🐾 — TEDU Animal Friends
+            Thank you all so much 🐾 — TEDU Animal Friends
           </p>
         </section>
 
@@ -196,21 +197,19 @@ export default function AcilPage() {
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
             <AlertTriangle className="w-6 h-6 text-amber-500" />
-            Belirtileri Tanıyın
+            Recognise the Signs
           </h2>
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
             {symptoms.map((s, i) => (
               <div
                 key={s.sign}
-                className={`flex items-center gap-4 px-5 py-3.5 ${
-                  i !== symptoms.length - 1 ? 'border-b border-gray-50' : ''
-                } ${s.urgent ? 'bg-red-50' : ''}`}
+                className={`flex items-center gap-4 px-5 py-3.5 ${i !== symptoms.length - 1 ? 'border-b border-gray-50' : ''} ${s.urgent ? 'bg-red-50' : ''}`}
               >
                 <div className={`w-2 h-2 rounded-full flex-shrink-0 ${s.urgent ? 'bg-red-500' : 'bg-amber-400'}`} />
                 <p className="text-gray-700 text-sm flex-1">{s.sign}</p>
                 {s.urgent && (
                   <span className="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-200 flex-shrink-0">
-                    Acil
+                    Urgent
                   </span>
                 )}
               </div>
@@ -222,15 +221,15 @@ export default function AcilPage() {
         <div className="bg-gray-900 rounded-3xl p-8 text-white">
           <h3 className="text-xl font-bold mb-5 flex items-center gap-2">
             <AlertTriangle className="w-5 h-5 text-amber-400" />
-            Kesinlikle Yapmayın
+            Never Do These
           </h3>
           <ul className="space-y-3">
             {[
-              'Animal Friends\'e haber vermeden hayvanı kampüsten çıkarmayın',
-              'Gruba sormadan veterinere götürmeyin — ilaç uyumsuzluğu tehlikeli olabilir',
-              'Evcil hayvanınızı "güvenli" diye okula bırakmayın',
-              'Sahiplendirme için para talep eden kişilerle muhatap olmayın, grubu bilgilendirin',
-              'İnsan ilacı vermeyin — çoğu ilaç hayvanlar için zehirlidir',
+              'Do not remove an animal from campus without notifying Animal Friends first',
+              'Do not take it to a vet without checking with the group — medication conflicts can be dangerous',
+              'Do not bring your pet to campus thinking it\'s "safe"',
+              'Do not deal with anyone asking for money for adoption — report it to the group',
+              'Do not give human medication — most drugs are toxic to cats and dogs',
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-sm text-gray-300">
                 <span className="text-red-400 font-bold mt-0.5 flex-shrink-0">✕</span>
@@ -251,11 +250,11 @@ export default function AcilPage() {
             <MessageCircle className="w-8 h-8 fill-white" />
             <div>
               <p className="font-bold">TEDU Animal Friends</p>
-              <p className="text-green-100 text-sm">WhatsApp Topluluğu</p>
+              <p className="text-green-100 text-sm">WhatsApp Community</p>
             </div>
           </div>
           <span className="bg-white text-[#25D366] font-bold text-sm px-4 py-2 rounded-xl">
-            Katıl →
+            Join →
           </span>
         </a>
       </div>

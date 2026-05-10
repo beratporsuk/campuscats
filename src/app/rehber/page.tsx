@@ -1,51 +1,51 @@
 import { CheckCircle, XCircle, AlertTriangle, BookOpen, Heart, Info } from 'lucide-react';
 
 const safefoods = [
-  { name: 'Kedi/Köpek Maması', desc: 'Yaş veya kuru, en sağlıklı seçenek', emoji: '🥫' },
-  { name: 'Haşlanmış Tavuk', desc: 'Tuzsuz, kemiksiz, az yağlı', emoji: '🍗' },
-  { name: 'Haşlanmış Balık', desc: 'Kılçıksız, tuzsuz, az miktarda', emoji: '🐟' },
-  { name: 'Haşlanmış Yumurta', desc: 'Az miktarda, tuzsuz', emoji: '🥚' },
-  { name: 'Haşlanmış Pirinç', desc: 'Sadece mamayla karıştırarak', emoji: '🍚' },
-  { name: 'Temiz Su', desc: 'Her zaman yanında taze su bırakın', emoji: '💧' },
+  { name: 'Cat / Dog Food', desc: 'Wet or dry — the healthiest option', emoji: '🥫' },
+  { name: 'Boiled Chicken', desc: 'Unsalted, boneless, low-fat', emoji: '🍗' },
+  { name: 'Boiled Fish', desc: 'Boneless, unsalted, in small amounts', emoji: '🐟' },
+  { name: 'Boiled Egg', desc: 'Small amounts, unsalted', emoji: '🥚' },
+  { name: 'Boiled Rice', desc: 'Only mixed with cat/dog food', emoji: '🍚' },
+  { name: 'Fresh Water', desc: 'Always leave clean, fresh water nearby', emoji: '💧' },
 ];
 
 const dangerousfoods = [
-  { name: 'Soğan & Sarımsak', desc: 'Kanda zehirlenmeye yol açar', emoji: '🧅', severity: 'yüksek' },
-  { name: 'Çikolata', desc: 'Kalp ritim bozukluğu yaratır', emoji: '🍫', severity: 'yüksek' },
-  { name: 'Üzüm & Kuru Üzüm', desc: 'Böbrek yetmezliğine neden olur', emoji: '🍇', severity: 'yüksek' },
-  { name: 'Alkol', desc: 'Son derece tehlikeli, ölümcül', emoji: '🍺', severity: 'yüksek' },
-  { name: 'Tuzlu Yiyecekler', desc: 'Böbrek hasarına yol açar', emoji: '🧂', severity: 'orta' },
-  { name: 'Çiğ Balık / Et', desc: 'Parazit ve bakteri riski', emoji: '🥩', severity: 'orta' },
-  { name: 'Ekmek & Hamur İşi', desc: 'Besleyici değil, obeziteye neden olur', emoji: '🍞', severity: 'düşük' },
-  { name: 'Süt & Süt Ürünleri', desc: 'Yetişkin kediler laktoz intoleranttır', emoji: '🥛', severity: 'düşük' },
+  { name: 'Onion & Garlic', desc: 'Causes blood poisoning', emoji: '🧅', severity: 'high' },
+  { name: 'Chocolate', desc: 'Can cause heart arrhythmia', emoji: '🍫', severity: 'high' },
+  { name: 'Grapes & Raisins', desc: 'Leads to kidney failure', emoji: '🍇', severity: 'high' },
+  { name: 'Alcohol', desc: 'Extremely dangerous — can be fatal', emoji: '🍺', severity: 'high' },
+  { name: 'Salty Foods', desc: 'Causes kidney damage', emoji: '🧂', severity: 'medium' },
+  { name: 'Raw Fish / Meat', desc: 'Risk of parasites and bacteria', emoji: '🥩', severity: 'medium' },
+  { name: 'Bread & Pastries', desc: 'Not nutritious; causes obesity', emoji: '🍞', severity: 'low' },
+  { name: 'Milk & Dairy', desc: 'Adult cats are lactose intolerant', emoji: '🥛', severity: 'low' },
 ];
 
 const tips = [
   {
     icon: Heart,
-    title: 'Günde 2-3 Kez Besleyin',
-    desc: 'Hayvanların sindirim sistemi düzenli ama az beslenmeye uyarlanmıştır. Aşırı besleme obeziteye ve sağlık sorunlarına neden olur.',
+    title: 'Feed 2–3 Times a Day',
+    desc: 'A cat\'s digestive system is adapted to regular but small meals. Overfeeding leads to obesity and health problems.',
     color: 'bg-orange-50 border-orange-200 text-orange-700',
     iconColor: 'text-orange-500',
   },
   {
     icon: CheckCircle,
-    title: 'Yiyecek Kalıntısı Bırakmayın',
-    desc: 'Yenilmeyen yiyecekleri kaldırın. Uzun süre açıkta kalan yiyecekler bakterilere ve zararlı böceklere davet çıkarır.',
+    title: 'Remove Uneaten Food',
+    desc: 'Pick up any leftover food. Food left out for too long attracts bacteria, insects, and other pests.',
     color: 'bg-green-50 border-green-200 text-green-700',
     iconColor: 'text-green-500',
   },
   {
     icon: Info,
-    title: 'Temiz Su Unutmayın',
-    desc: 'Su, hayvanlara verdiğiniz yiyecekten daha önemlidir. Özellikle yaz aylarında su kaplarını sürekli dolu tutun.',
+    title: 'Always Leave Water',
+    desc: 'Water is more important than food. Especially in summer, keep water bowls filled and refreshed regularly.',
     color: 'bg-blue-50 border-blue-200 text-blue-700',
     iconColor: 'text-blue-500',
   },
   {
     icon: AlertTriangle,
-    title: 'İstasyon Dışına Yemek Bırakmayın',
-    desc: 'Sadece belirlenen besleme noktalarını kullanın. Rastgele besleme alanları hayvanların tehlikeli bölgelere girmesine neden olur.',
+    title: 'Use Designated Stations Only',
+    desc: 'Only feed at the marked feeding stations. Random feeding spots can lead animals into dangerous areas.',
     color: 'bg-amber-50 border-amber-200 text-amber-700',
     iconColor: 'text-amber-500',
   },
@@ -59,11 +59,11 @@ export default function RehberPage() {
         <div className="max-w-4xl mx-auto text-center text-white">
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/30">
             <BookOpen className="w-4 h-4" />
-            TEDU Animal Friends tarafından hazırlandı
+            Prepared by TEDU Animal Friends
           </div>
-          <h1 className="text-4xl sm:text-5xl font-black mb-4">Beslenme Rehberi</h1>
+          <h1 className="text-4xl sm:text-5xl font-black mb-4">Feeding Guide</h1>
           <p className="text-green-100 max-w-xl mx-auto text-lg">
-            Kampüs hayvanlarını doğru ve sağlıklı beslemek için bilmeniz gereken her şey.
+            Everything you need to know about feeding campus animals correctly and safely.
           </p>
         </div>
       </div>
@@ -73,7 +73,7 @@ export default function RehberPage() {
         <section>
           <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
             <Info className="w-6 h-6 text-orange-500" />
-            Beslenme Kuralları
+            Feeding Rules
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {tips.map((tip) => (
@@ -97,8 +97,8 @@ export default function RehberPage() {
               <CheckCircle className="w-6 h-6 text-green-600" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-gray-900">Güvenli Yiyecekler</h2>
-              <p className="text-sm text-gray-500">Verebileceğiniz, sağlıklı seçenekler</p>
+              <h2 className="text-2xl font-bold text-gray-900">Safe Foods</h2>
+              <p className="text-sm text-gray-500">Healthy options you can give</p>
             </div>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -125,8 +125,8 @@ export default function RehberPage() {
               <XCircle className="w-6 h-6 text-red-600" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-gray-900">Zararlı Yiyecekler</h2>
-              <p className="text-sm text-gray-500">Kesinlikle vermemeniz gereken maddeler</p>
+              <h2 className="text-2xl font-bold text-gray-900">Harmful Foods</h2>
+              <p className="text-sm text-gray-500">Items you should never give</p>
             </div>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -134,11 +134,7 @@ export default function RehberPage() {
               <div
                 key={food.name}
                 className={`bg-white rounded-2xl p-5 border shadow-sm flex items-start gap-3 hover:shadow-md transition-shadow ${
-                  food.severity === 'yüksek'
-                    ? 'border-red-200'
-                    : food.severity === 'orta'
-                    ? 'border-orange-200'
-                    : 'border-amber-200'
+                  food.severity === 'high' ? 'border-red-200' : food.severity === 'medium' ? 'border-orange-200' : 'border-amber-200'
                 }`}
               >
                 <span className="text-3xl">{food.emoji}</span>
@@ -148,15 +144,9 @@ export default function RehberPage() {
                 </div>
                 <div className="flex flex-col items-end gap-1">
                   <XCircle className="w-4 h-4 text-red-500 flex-shrink-0" />
-                  <span
-                    className={`text-xs font-medium px-2 py-0.5 rounded-full ${
-                      food.severity === 'yüksek'
-                        ? 'bg-red-100 text-red-700'
-                        : food.severity === 'orta'
-                        ? 'bg-orange-100 text-orange-700'
-                        : 'bg-amber-100 text-amber-700'
-                    }`}
-                  >
+                  <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${
+                    food.severity === 'high' ? 'bg-red-100 text-red-700' : food.severity === 'medium' ? 'bg-orange-100 text-orange-700' : 'bg-amber-100 text-amber-700'
+                  }`}>
                     {food.severity}
                   </span>
                 </div>
@@ -168,15 +158,15 @@ export default function RehberPage() {
         {/* Emergency note */}
         <div className="bg-gradient-to-r from-red-500 to-rose-500 rounded-3xl p-8 text-white text-center">
           <AlertTriangle className="w-10 h-10 mx-auto mb-3 opacity-90" />
-          <h3 className="text-2xl font-bold mb-2">Hasta veya Yaralı Hayvan Gördünüz mü?</h3>
+          <h3 className="text-2xl font-bold mb-2">Found a Sick or Injured Animal?</h3>
           <p className="text-red-100 mb-5 max-w-md mx-auto">
-            Acil durumda ne yapacağınızı öğrenin. TEDU Animal Friends acil hattına ulaşın.
+            Learn what to do in an emergency and how to reach TEDU Animal Friends immediately.
           </p>
           <a
             href="/acil"
             className="inline-flex items-center gap-2 bg-white text-red-600 font-bold px-6 py-3 rounded-xl hover:scale-105 transition-transform"
           >
-            Acil Durum Rehberi →
+            Emergency Guide →
           </a>
         </div>
       </div>
