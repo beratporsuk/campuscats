@@ -4,7 +4,7 @@ import { QRCodeSVG } from 'qrcode.react';
 import { ClipboardList, CheckCircle, MapPin, Camera, Clock, ExternalLink, Info } from 'lucide-react';
 
 // Google Form oluşturduktan sonra bu URL'i değiştirin
-const FORM_URL = 'https://forms.gle/BURAYA_FORM_LINKINI_EKLE';
+const FORM_URL = 'https://forms.gle/8ntuG9zd7LQxb2iz8';
 
 const formFields = [
   {
